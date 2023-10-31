@@ -1,0 +1,118 @@
+ /* Algemene Styling */
+ h1 {
+    font-family: 'Merriweather', serif;
+    font-size: 50px;
+    color: #315447;
+    text-align: center;
+    margin: 40px;
+    font-weight: bolder;
+ }
+ strong {
+  font-weight: bolder;
+ }
+ /* Responsive Styles Titles */
+@media screen and (max-width: 767px) {
+    h1 {
+      font-size: 40px;
+      text-align: left;  
+    }
+  }
+ h3 {
+    font-size: 21px;
+    font-family: 'Merriweather', serif;
+    background-color: #315447;
+    color: #FCFAF5;
+    text-align: center;
+    border-radius: 0.25rem;
+    margin-bottom: 15px;
+    margin-left: 5px;
+    margin-right: 5px;
+ }
+ 
+ /* Styling 2x2 grid */
+ .grid-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 5px;
+    width: 98%;
+    margin: 0;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px;
+  }
+  
+  .grid-item {
+    padding: 0;
+    margin: 0;
+    line-height: 1.8;
+    font-size: 17px;
+    text-align: justify;
+    justify-content: space-between;
+  }
+  .grid-item p {
+    padding-bottom: 15px;
+    padding-right: 55px;
+    padding-left: 55px;
+    color: #315447;
+  }
+  
+  .grid-item img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+    padding: 0;
+    border-radius: 0.25rem;
+    box-shadow: 0 20px 40px -14px rgba(0, 0, 0, 0.25);
+  }
+  .grid-item ul {
+    margin-left: 55px;
+    color: #315447;
+  }
+  .grid-item li span {
+    color: #315447;
+  }
+  .grid-item ul li {
+    padding-bottom: 5px;
+  }
+  
+  /* Responsive Styles */
+  @media screen and (max-width: 767px) {
+    .grid-container {
+      grid-template-areas: "item1" "item2" "item4" "item3";
+      grid-template-columns: 1fr;
+    }
+  
+    .grid-item:nth-child(1) {
+      grid-area: item1;
+    }
+  
+    .grid-item:nth-child(2) {
+      grid-area: item2;
+    }
+  
+    .grid-item:nth-child(3) {
+      grid-area: item3;
+    }
+  
+    .grid-item:nth-child(4) {
+      grid-area: item4;
+    }
+    h1 {
+      text-align: center;
+    }
+    h3 {
+      margin: 0 0 15px 0;
+    }
+    .grid-item p {
+      padding-bottom: 15px;
+      padding-right: 25px;
+      padding-left: 25px;
+    }
+    .grid-item ul {
+      margin-left: 25px;
+      padding-right: 25px;
+    }
+    .grid-item ul li {
+      margin-left: 5px;
+    }
+  }

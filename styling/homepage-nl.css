@@ -1,0 +1,344 @@
+/* banner styling */
+.banner {
+    width: 100%;
+    height: 550px;
+    overflow: hidden;
+  }
+.banner img {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+    transition: opacity 0.5s ease-in-out;
+  }
+  @media screen and (max-width: 767px) {
+    .banner {
+      height: 150px;
+    }
+  }
+/* Titels */
+.titles {
+    font-family: 'Merriweather', serif;
+    font-size: 50px;
+    color: #315447;
+    text-align: center;
+    margin: 40px;
+    font-weight: bolder;
+}
+/* Responsive Styles Titles */
+@media screen and (max-width: 767px) {
+  .titles {
+    font-size: 40px;
+    text-align: center;  
+    margin: 10px;
+  }
+}
+@media screen and (max-width: 767px) {
+  p {
+    padding: 0px 10px 0px 5px;
+  }
+}
+/* text */
+p {
+  text-align: justify;
+  font-size: 18px;
+}
+strong {
+  font-weight: bolder;
+}
+/* titels */
+h2 {
+  font-size: 30px;
+  font-family: 'Merriweather', serif;
+  margin-bottom: 15px;
+}
+h3 {
+  font-size: 21px;
+}
+h4 {
+  margin-bottom: 5px;
+}
+/* Styling specialisaties cards */
+.card img {
+    height: auto;
+    max-width: 100%;
+    vertical-align: middle;
+    object-fit: fill;
+  }
+
+  .cards {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .cards_item {
+    display: flex;
+    padding: 1rem;
+  }
+  @media (min-width: 40rem) {
+    .cards_item {
+      width: 50%;
+    }
+  }
+
+  @media (min-width: 40rem) {
+    .cards_image {
+      height: 350px;
+    }
+  }
+  
+  @media (min-width: 56rem) {
+    .cards_item {
+      width: 33.3333%;
+    }
+  }
+  
+  .card {
+    background-color: #C7C8B9;
+    border-radius: 0.25rem;
+    box-shadow: 0 20px 40px -14px rgba(0, 0, 0, 0.25);
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+  }
+  .card_content:hover {
+    background-color: #315447;
+  }
+ 
+
+  .card_content {
+    padding: 1rem;
+    background: #C7C8B9;
+    display: flex;
+    flex-direction: column;
+    height: 100%; 
+    justify-content: space-between; 
+    padding-bottom: 20px;
+    background-color: #9CA68C;
+  }
+  
+  .card_title {
+    color: white;
+    padding-bottom: 5px;
+    font-weight: 700;
+    font-family: 'Merriweather', serif;
+    letter-spacing: 1px;
+    margin: 0px;
+    
+  }
+  
+  .card_text {
+    color: white;
+    line-height: 1.5;
+    margin-bottom: 1.25rem;    
+    font-weight: 400;
+    font-size: 18px;
+  }
+  
+/* Styling Stephanie */
+.team-parent {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  grid-template-rows: 1fr 2fr 1fr;
+  grid-column-gap: 5px;
+  grid-row-gap: 5px;
+    align-items: center; /* Vertically center the content */
+  margin: 1rem;
+  padding: 10px;
+  border-radius: 0.25rem;
+  }
+  
+  .team-photo { grid-area: 1 / 1 / 4 / 2; }
+  .team-slogan { grid-area: 1 / 2 / 2 / 3; }
+  .team-intro { grid-area: 2 / 2 / 3 / 3; }
+  .team-btn { grid-area: 3 / 2 / 4 / 3; }
+  
+  .slogan {
+    font-size: 35px;
+    font-style: italic;
+    font-family: 'Merriweather', serif;
+    margin-bottom: 15px;
+  }
+
+  .team-photo img {
+    max-width: 90%;
+    object-fit: contain; /* Fit the image within the container's height */
+    max-height: 100%; /* Ensure the image doesn't exceed the container's height */
+    border-radius: 0.25rem;
+  }
+
+  .team-photo {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .team-slogan {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Center vertically */
+    align-items: center;
+    color: #315447;
+  }
+  .team-slogan p {
+    font-size: 25px;
+  }
+  
+  .team-intro {
+    padding: 10px;
+    background-color: #C7C8B9;
+    padding: 10px;
+  }
+  .team-btn {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Center vertically */
+    align-items: center;
+  }
+  
+  .informatie-btn {
+    outline: none;
+    background-color: #315447;
+    cursor: pointer;
+    border: none;
+    padding: 0.9rem 2rem;
+    margin: 0;
+    border-radius: 500px;
+    width: 250px;
+    text-align: center;
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 19px;
+  }
+  .afspraak-btn {
+    outline: none;
+    background-color: #9CA68C;
+    cursor: pointer;
+    border: none;
+    padding: 0.9rem 2rem;
+    margin: 0;
+    border-radius: 500px;
+    width: 250px;
+    text-align: center;
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 19px;
+  }
+  @media screen and (max-width: 767px) {
+    .afspraak-btn {
+      margin: 15px;
+    }
+    .contact-btn {
+      padding-right: 0;
+    }
+  }
+  .team-intro p {
+    line-height: 2;
+  }
+  @media screen and (max-width: 767px) {
+    .team-parent {
+      display: block;
+      margin: 1rem;
+      padding: 0;
+    }
+    .team-photo,
+    .team-slogan,
+    .team-intro,
+    .team-btn {
+      margin-bottom: 10px;
+    }
+    .team-slogan {
+      text-align: center;
+    }
+  }
+
+/* Styling contact */
+.contact-parent {
+  display: grid;
+  grid-template-columns: 2fr 1fr 3fr;
+  grid-template-rows: 1fr 4fr;
+  border-radius: 0.25rem;
+  padding: 10px;
+  
+  }
+  
+  .contact-uren { grid-area: 1 / 1 / 2 / 3;
+    background-color: #315447;
+    color: white;
+    padding-top: 10px;
+    padding-left: 10px;
+    padding-bottom: 10px;
+    margin-right: 10px;
+    border-radius: 0.25rem;
+  }
+  .gegevens {
+    grid-area: 2 / 1 / 3 / 2;
+    background-color: #FCFAF5;
+    padding-left: 10px;
+  }
+  .gegevens h2 {
+    color: #315447;
+    padding-top: 10px;
+  }
+  .gegevens li {
+    display: flex;
+    font-size: 18px;
+    align-items: center;
+    line-height: 1.5;
+    color: #315447;
+    margin-left: 10px;
+  }
+  .gegevens li i {
+    margin-right: 10px;
+  }
+  
+  .contact-btn { grid-area: 2 / 2 / 3 / 3;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Center vertically */
+    align-items: center; /* Center horizontally */
+    height: 100%;
+    background-color: #FCFAF5;
+    padding-right: 20px;
+  }
+  .contact-maps { grid-area: 1 / 3 / 3 / 4; }
+  .contact-maps iframe {
+    width: 100%;
+    height: 100%;
+}
+  
+  
+  .contactinformation h2 {
+    text-align: center;
+  }
+
+@media (max-width: 767px) {
+  .contact-parent {
+    grid-template-columns: 1fr; /* Switch to a single column layout */
+    grid-template-rows: auto; /* Allow rows to expand as needed */
+  }
+
+  .contact-uren {
+    grid-area: auto; /* Reset the grid area for div1 */
+  }
+
+  .contact-uren li {
+    margin-bottom: 5px;
+  }
+
+  .contact-btn {
+    grid-area: auto;
+    padding: 0; /* Reset the grid area for div2 */
+  }
+
+  .contact-uren h2 {
+    text-align: center;
+  }
+  
+  .informatie-btn {
+    margin-bottom: 10px;
+  }
+
+  .contact-maps {
+    grid-area: auto; /* Reset the grid area for div3 */
+  }
+}

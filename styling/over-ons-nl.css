@@ -1,0 +1,113 @@
+/* Styling Banner */
+.banner {
+    width: 100%;
+    height: 500px;
+    overflow: hidden;
+  }
+.banner img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: opacity 0.5s ease-in-out;
+  }
+  @media screen and (max-width: 767px) {
+    .banner {
+      height: 150px;
+    }
+  }
+/* Styling General */
+h1 {
+    font-family: 'Merriweather', serif;
+    font-size: 50px;
+    color: #315447;
+    text-align: center;
+    margin: 40px;
+    font-weight: bolder;
+ }
+.slogan {
+  background-color: #FCFAF5;
+  margin-left: 20px;
+  margin-right: 20px;
+  color:#315447;
+  font-size: 30px;
+}
+strong {
+  font-weight: bolder;
+ }
+
+ /* Responsive Styles Titles */
+@media screen and (max-width: 767px) {
+    h1 {
+      font-size: 40px;
+      text-align: center;  
+    }
+  }
+ h3 {
+    font-size: 21px;
+    font-family: 'Merriweather', serif;
+    background-color: #315447;
+    color: #FCFAF5;
+    text-align: center;
+    border-radius: 0.25rem;
+    margin-bottom: 15px;
+    padding: 8px;
+    margin-left: 15px;
+    margin-right: 15px;
+ }
+ .lifestyle p {
+    line-height: 1.5;
+    font-size: 18px;
+    text-align: justify;
+    padding-right: 55px;
+    padding-left: 55px;
+    padding-bottom: 10px;
+    color: #315447;
+ }
+ small {
+  margin-left: 5px;
+ }
+/* Styling Lifestyle*/ 
+.lifestyle-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 10px; /* Add some space between the iframe and contact information */
+    margin: 1rem;
+  }
+
+.stephanie {
+    display: flex;
+    justify-content: center; /* Horizontally center the image */
+  }
+  
+.stephanie img {
+    max-width: 100%;
+    object-fit: contain; /* Fit the image within the container's height */
+    height: 900px;
+    border-radius: 0.25rem;
+    box-shadow: 0 20px 40px -14px rgba(0, 0, 0, 0.25);
+  }
+@media (max-width: 767px) {
+    .lifestyle-container {
+      grid-template-columns: 1fr; /* On smaller screens, revert to a single column layout */
+    }
+    .lifestyle p {
+      padding: 15px 25px 15px 25px;
+    }
+    h3 {
+      margin: 0;
+      font-size: 17px;
+    }
+    .slogan {
+      margin: 0;
+      font-size: 17px;
+    }
+    .stephanie img {
+      height: 400px;
+    }
+  }
+  
+@media (max-width: 767px) {
+    .lifestyle-container {
+      flex-direction: column;
+    }
+  }

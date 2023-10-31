@@ -1,0 +1,304 @@
+/* General styling for the webpage */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Noto Sans', sans-serif;
+}
+html {
+    background-color: #FCFAF5;
+    scroll-behavior: smooth;
+  }
+/* Style for the language links */
+.language-link {
+    text-decoration: none; 
+    color: #000; 
+    font-weight: bold;
+}
+.language-circle {
+    width: 35px; 
+    height: 35px;
+    background-color: #9CA68C;
+    border-radius: 50%; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 10px; 
+    color: #000; 
+    font-weight: bold;
+    cursor: pointer; 
+}
+
+/* Add hover effect for better interactivity */
+.language-circle:hover {
+    background-color: #C7C8B9;
+    text-decoration: none;
+  
+}
+
+/* Style for the language circles */
+.language-selector {
+    display: flex;
+    justify-content: flex-end;
+    padding: 5px 5px 10px;
+}
+
+.navbar li {
+    list-style: none;
+}
+
+.navbar a {
+    text-decoration: none;
+}
+/* Style Navigation */
+.navbar {
+    background-color: #9CA68C;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: auto;
+    padding-left: 10px;
+    padding-right: 10px;
+    box-shadow: 0 20px 40px -14px rgba(0, 0, 0, 0.25);
+}
+.hamburger {
+    display: none;
+}
+
+.bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background-color: #101010;
+}
+.nav-menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-item {
+    margin-left: 1rem;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.nav-link {
+    color: black;
+    text-decoration: none;
+    margin-right: 50px;
+    font-family: 'Merriweather', serif;
+    font-size: 21px;
+}
+
+.nav-link:hover{
+    font-size:bolder;
+}
+
+.nav-logo {
+    padding: 10px;
+}
+.nav-logo img{
+    float: left;
+}
+.dropdown-item a {
+  color: black;
+    padding: 8px 12px;
+    display: block;
+    text-decoration: none;
+    font-family: 'Merriweather', serif;
+    font-size: 21px;
+}
+.phone-number {
+    margin-right: 15px;
+    font-family: 'Merriweather', serif;
+    font-size: 21px;
+    align-items: center;
+    display: flex;
+  }
+.appointmentbtn {
+    background-color: #315447;
+    color: #FCFAF5;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 500px;
+    font-size: 19px;
+  }
+.dropdown-menu {
+    display: none;
+    text-align: left;
+    position: absolute;
+    background-color: #9CA68C;
+    min-width: 200px;
+    z-index: 1;
+    border-radius: 0.25rem;
+    box-shadow: 0 20px 40px -14px rgba(0, 0, 0, 0.25);
+}
+.nav-link,
+.dropdown-item {
+    color: black; 
+}
+
+.nav-item:hover .dropdown-menu {
+    display: block;
+}
+
+
+@media only screen and (max-width: 1359px) {
+    .nav-menu {
+        position: absolute;
+        z-index: 2;
+        left: -100%;
+        top: 8rem;
+        flex-direction: column;
+        background-color: #315447;
+        width: 100%;
+        border-radius: 10px;
+        text-align: center;
+        transition: 0.3s;
+        box-shadow:
+            0 10px 27px rgba(0, 0, 0, 0.05);
+    }
+
+    .hamburger.active .bar:nth-child(2) {
+        opacity: 0;
+    }
+
+    .hamburger.active .bar:nth-child(1) {
+        transform: translateY(8px) rotate(45deg);
+    }
+
+    .hamburger.active .bar:nth-child(3) {
+        transform: translateY(-8px) rotate(-45deg);
+    }
+
+    .nav-menu.active {
+        left: 0;
+    }
+
+    .nav-item {
+        margin: 2.5rem 0;
+    }
+
+    .hamburger {
+        display: block;
+        cursor: pointer;
+    }
+    .nav-menu.active {
+    left: 0;
+    }
+    .nav-menu.active {
+        left: 0;
+    }
+    
+    /* Add this CSS to control phone number visibility */
+    .nav-menu.active .phone-number {
+        display: none; 
+    }
+     a {
+        font-size: 17px;
+    }
+    .appointmentbtn {
+        display: none;
+    }
+    .nav-link {
+        color: white; 
+    }
+
+}
+
+/* Styling Footer */
+.footer p {
+    margin-right: 20px;
+    font-size: 15px;
+    padding: 0;
+  }
+  .footer {
+    background-color: #9CA68C;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    padding: 10px;
+    color: black;
+    margin-top: 10px;
+    font-size: 15px;
+  }
+  .footer h4 {
+    margin-bottom: 5px;
+  }
+  .footer-column {
+    padding: 10px;
+  }
+  
+  .footer-column1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 1px;
+  }
+  
+  .footer img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  .footer ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  ul.footer-links li {
+    display: block;
+  }
+  
+  ul.footer-links {
+    padding: 0;
+    margin: 0;
+  }
+  
+  .footer a {
+    color: black;
+    text-decoration: none;
+    font-size: 15px;
+  }
+
+  .footer .social-icons {
+    display: flex;
+  }
+  
+  .footer .social-icons a {
+    display: inline-block;
+    margin-right: 5px;
+  }
+  
+  .footer .social-icons a img {
+    width: 30px;
+    height: 30px;
+    margin-top: 5px;
+  }
+  /* Responsive Styles Footer */
+  @media screen and (max-width: 767px) {
+    .footer {
+      grid-template-columns: 1fr;
+      grid-template-rows: auto;
+      text-align: center;
+    }
+    
+    .footer-column {
+      padding: 10px 0;
+    }
+
+    .footer p {
+      display: grid;
+      text-align: center;
+    }
+    
+    .footer .social-icons {
+      justify-content: center;
+    }
+  } 
