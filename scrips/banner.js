@@ -27,4 +27,4 @@ function changeImage() {
   }, 500);
 }
 
-setInterval(changeImage, 4000); // Change image every 45 seconds
+setInterval(changeImage, 10000); // Change image every 45 seconds
