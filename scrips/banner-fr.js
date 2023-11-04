@@ -14,7 +14,7 @@ navLinks.forEach(link => {
 });
 // Banner automatic images 
 const bannerImage = document.getElementById("banner-image");
-const images = ["../images/index_banner2_quote1.png", "../images/index_banner1_quote_2.png", "../images/index_banner1_quote_3.png","../images/index_banner2_quote4.png", "../images/index_banner1_quote_5.png"];
+const images = ["../images/index_banner2_quote1.png", "../images/index_banner2_quote2.png", "../images/index_banner1_quote_3.png","../images/index_banner2_quote4.png", "../images/index_banner1_quote_5.png"];
 let currentImageIndex = 0;
 
 function changeImage() {
