@@ -100,10 +100,6 @@ html {
 .nav-link:hover{
     font-size:bolder;
 }
-
-.nav-logo {
-    padding: 10px;
-}
 .nav-logo img{
     float: left;
 }
